@@ -38,18 +38,13 @@ colNames <- colnames(ExtractData)
 
 for (i in 1:length(colNames)) 
 {
-    colNames[i] <- gsub("\\()","",colNames[i])
-    colNames[i] <- gsub("-std$","StDv",colNames[i])
-    colNames[i] <- gsub("-mean","Mean",colNames[i])
-    colNames[i] <- gsub("^(t)","Time",colNames[i])
-    colNames[i] <- gsub("^(f)","Frequency",colNames[i])
-    colNames[i] <- gsub("([Gg]ravity)","Gravity",colNames[i])
-    colNames[i] <- gsub("([Bb]ody[Bb]ody|[Bb]ody)","Body",colNames[i])
-    colNames[i] <- gsub("[Gg]yro","Gyro",colNames[i])
+    colNames[i] <- gsub("\\()","",colNames[i]) colNames[i] <- gsub("-std$","StDv",colNames[i])
+    colNames[i] <- gsub("-mean","Mean",colNames[i]) colNames[i] <- gsub("^(t)","Time",colNames[i])
+    colNames[i] <- gsub("^(f)","Frequency",colNames[i]) colNames[i] <- gsub("([Gg]ravity)","Gravity",colNames[i])
+    colNames[i] <- gsub("([Bb]ody[Bb]ody|[Bb]ody)","Body",colNames[i]) colNames[i] <- gsub("[Gg]yro","Gyro",colNames[i])
     colNames[i] <- gsub("AccMag","AccelerationMagnitude",colNames[i])
     colNames[i] <- gsub("([Bb]odyaccjerkmag)","BodyAccelerationJerkMagnitude",colNames[i])
-    colNames[i] <- gsub("JerkMag","JerkMagnitude",colNames[i])
-    colNames[i] <- gsub("GyroMag","GyroMagnitude",colNames[i])
+    colNames[i] <- gsub("JerkMag","JerkMagnitude",colNames[i]) colNames[i] <- gsub("GyroMag","GyroMagnitude",colNames[i])
 }
 
 colnames(ExtractData) <- colNames
