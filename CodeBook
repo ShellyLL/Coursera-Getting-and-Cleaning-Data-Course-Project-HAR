@@ -1,3 +1,13 @@
 This is part of Coursera Getting and Cleaning Data Course Week 3 Project.
 
-a code book that describes the variables, the data, and any transformations or work that you performed to clean up the data
+This code book describes the variables, the data, and any transformations or work that was performed to getting and clean the data.
+
+Data Sourse: 
+
+A full description is available at the site where the data was obtained: 
+
+http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
+
+Here are the data for the project: 
+
+https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
