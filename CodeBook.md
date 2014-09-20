@@ -1,9 +1,8 @@
 This is part of Coursera Getting and Cleaning Data Course Week 3 Project.
 This code book describes the variables, the data, and any transformations or work that was performed to getting and clean the data.
-===================================================
 
 Data Sourse: 
-
+===========
 A full description is available at the site where the data was obtained: 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones 
 
@@ -25,9 +24,10 @@ The following files are available for the train and test data. Their description
 - 'train/Inertial Signals/total_acc_x_train.txt': The acceleration signal from the smartphone accelerometer X axis in standard gravity units 'g'. Every row shows a 128 element vector. The same description applies for the 'total_acc_x_train.txt' and 'total_acc_z_train.txt' files for the Y and Z axis. 
 - 'train/Inertial Signals/body_acc_x_train.txt': The body acceleration signal obtained by subtracting the gravity from the total acceleration. 
 - 'train/Inertial Signals/body_gyro_x_train.txt': The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. 
-========================================================
 
-In the R script called run_analysis.R, the followings were conducted to get and clean the data: 
+
+In the R script called run_analysis.R, the followings were conducted to get and clean the data:
+===========================
 
 1. Merge the training and the test sets to create one data set.
     Firstly, use "read.table" function to read the data files and store them in: features, activityLabel, subjectTrain, xTrain, yTrain, subjectTest, xTest and yTest. 
